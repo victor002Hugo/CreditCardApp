@@ -8,8 +8,8 @@ class PanelTop extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(left: 24, right: 24, top: 12),
         child: Container(
-          // color: Colors.red,
-          height: 150,
+          //  color: Colors.red,
+          height: MediaQuery.of(context).size.height / 5,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -27,7 +27,7 @@ class PanelTop extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 30,
+                height: MediaQuery.of(context).size.height * 0.03,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class PanelTop extends StatelessWidget {
                         color: Colors.grey[400]),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: MediaQuery.of(context).size.height * 0.01,
                   ),
                   Text(
                     '\$2346.15',
